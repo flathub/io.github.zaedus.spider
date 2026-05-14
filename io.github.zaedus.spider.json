@@ -3,9 +3,7 @@
   "runtime": "org.gnome.Platform",
   "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
-  "sdk-extensions": [
-    "org.freedesktop.Sdk.Extension.rust-stable"
-  ],
+  "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
   "command": "spider",
   "finish-args": [
     "--share=network",
@@ -32,14 +30,12 @@
           "CARGO_HOME": "/run/build/spider/cargo"
         }
       },
-      "config-opts": [
-        "-Dflatpak=true"
-      ],
+      "config-opts": ["-Dflatpak=true"],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/Zaedus/spider.git",
-          "commit": "v0.0.8"
+          "commit": "v0.0.9"
         },
         "generated-sources.json"
       ]
